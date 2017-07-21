@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 html,
 body {
 	height: 100%;
@@ -11,17 +12,21 @@ body {
 	border: 0;
 	margin: 0;
 	font-size: 16px;
+	/*font-family: sans-serif;*/
+
 }
 
 h1 {
 	border: 0;
 	margin: 0;
+	color:#1F1FEC;
+	font-size: 32px;
 }
 
 .wrapper {
 	height: 100%;
 	width: 100%;
-	background-color: #BBB;
+	background-color: #EC1F1F;
 }
 
 .welcome-screen {
@@ -55,7 +60,11 @@ h1 {
 }
 
 .main footer {
-	height: 80px;
+	height: 100px;
+   position: absolute;
+    bottom: 0px;
+    width: 100%;
+
 	background-color: #282828;
 	padding-top: 1rem;
 }
@@ -65,6 +74,13 @@ h1 {
 	font-size: 1.5rem;
 	justify-content: center;
 	align-items: center;
+}
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
 }
 
 .hidden {
@@ -207,4 +223,60 @@ table.dataTable tbody tr {
 	outline:none;
 	border:none;
 }
-      
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+.effect
+
+	{
+		display: inline-block;
+	 border: 1px solid white;
+	 padding: 21px;
+	 margin-left: 218px;
+	 position: relative;
+	 top: 161px;
+	 border-radius: 27px;
+	 box-shadow: 10px 10px 5px #888888;
+	}
+
+.border{
+
+ box-shadow: 10px 10px 5px #289888;
+
+}

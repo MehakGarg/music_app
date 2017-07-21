@@ -9,13 +9,13 @@
 <link rel="stylesheet" type="text/css" href="font-awesome.css">
 	    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
 	    <link rel="stylesheet" type="text/css" href="main.css">
-			<link rel="stylesheet" type="text/css" href="css/normalize.css">
+			<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
 		<!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">-->
 </head>
 <body>                <!--Body-->
 	<div class="wrapper"><!--Start of Div1-->
-		<section class="welcome-screen "><!--Section1-->
-			<marquee><h1>Welcome to Songify</h1></marquee>
+		<section class="welcome-screen hidden"><!--Section1-->
+			<h1>Welcome to Songify</h1>
 			<h3>Enter name to access your account</h3>
 			<div class="input-wrapper">    <!--Start of Div2-->
 				<input id="name-input" placeholder="Name" type="text">
@@ -26,8 +26,8 @@
 			<div class="right floated user-name"></div>
 		</header>
 
-		<div class="main hidden"><!--Start of Div3-->
-			<section class="content"><!--Section2-->
+		<div class="main "><!--Start of Div3-->
+			<section class="content hidden"><!--Section2-->
 
 				<audio src="song.mp3"></audio>
 
@@ -112,11 +112,7 @@
 
 			</section>              <!--End of Section2-->
 			<section class="Drumkit hidden">
-
-	<div class="effect a">Cabinet</div>
-	<div class="effect b">Chorus</div>
-	<div class="effect c">Moog Filte</div>
-	<div class="effect d">Gain</div>
+<div class="Effects"></div>
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
@@ -156,9 +152,9 @@
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav" id='a'></audio>
-  <audio data-key="83" src="sounds/hihat.wav" id='b'></audio>
-  <audio data-key="68" src="sounds/kick.wav" id='a'></audio>
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
   <audio data-key="70" src="sounds/openhat.wav"></audio>
   <audio data-key="71" src="sounds/boom.wav"></audio>
   <audio data-key="72" src="sounds/ride.wav"></audio>
@@ -176,7 +172,6 @@
 	      <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
 	      <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
 	      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
-				<i class="fa fa-music" aria-hidden="true"></i>
 					</div><!--End of div7-->
 					<div class="progress-wrapper"><!--Start of div8-->
 						<span class="time-elapsed"></span>
@@ -194,12 +189,6 @@
 	</script>
 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
     </script>
-		   <script src="https://cdnjs.cloudflare.com/ajax/libs/tunajs/0.4.4/tuna-min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="affects.js">
-
-		</script>
-
-		</script>
 	<script src="main.js">
 	</script>
 </body>
